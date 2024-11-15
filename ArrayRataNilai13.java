@@ -21,19 +21,14 @@ public class ArrayRataNilai13 {
         for (int i = 0; i < nilaiMhs.length; i++) {
             if (nilaiMhs[i] > 70) {
                 jumlahLulus ++;
-            } else {
-                jumlahTidakLulus ++;
-            }
-        }
-        // System.out.println("Jumlah mahasiswa yang lulus adalah " + jumlahLulus);
-
-        for (int i = 0; i < nilaiMhs.length; i++) {
-            if (nilaiMhs[i] > 70) {
                 totalLulus += nilaiMhs[i];
             } else {
+                jumlahTidakLulus ++;
                 totalTidakLulus += nilaiMhs[i];
             }
         }
+        // System.out.println("Jumlah mahasiswa yang lulus adalah " + jumlahLulus);
+        
 
         rata2lulus = totalLulus/jumlahLulus;
         System.out.println("Rata-rata nilai lulus = " + rata2lulus);
